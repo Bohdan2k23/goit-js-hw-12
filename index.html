@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/goit-js-hw-12/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    
+    <script src="https://unpkg.com/blickcss@2.1"></script>
+    <script>
+      blick.class.hidden = null;
+    </script>
+    <script type="module" crossorigin src="/goit-js-hw-12/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-483db976.js">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/vendor-a51daae5.css">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-8e8e0b93.css">
+  </head>
+  <body class="py-32">
+    <form class="flex-center gap-8">
+      <input
+        class="field"
+        name="image"
+        placeholder="Search images..."
+        type="text"
+      />
+      <button class="btn" name="button" type="submit">Search</button>
+    </form>
+
+    <main
+      class="grid md:grid-cols-2 lg:grid-cols-3 px-20 gap-24 max-w-1128 m-32+auto"
+    ></main>
+
+    <div id="loader" class="flex-center mt-32" style="display: none">
+      <span class="loader"></span>
+    </div>
+
+    <div class="flex-center">
+      <button class="btn" style="display: none" id="more">Load more</button>
+    </div>
+
+    
+  </body>
+</html>
