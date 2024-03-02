@@ -42,7 +42,7 @@ async function onSubmit(ev) {
   }
 
   //показує загрузку бо не видно(
-  await new Promise((res) => setTimeout(() => res(), 2000));
+  // await new Promise((res) => setTimeout(() => res(), 2000));
 
   loader.style.display = "none";
   more.style.display = "";
