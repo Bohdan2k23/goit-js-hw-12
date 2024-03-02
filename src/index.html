@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://unpkg.com/blickcss@2.1"></script>
+    <script>
+      blick.class.hidden = null;
+    </script>
+  </head>
+  <body class="py-32">
+    <form class="flex-center gap-8">
+      <input
+        class="field"
+        name="image"
+        placeholder="Search images..."
+        type="text"
+      />
+      <button class="btn" name="button" type="submit">Search</button>
+    </form>
+
+    <main
+      class="grid md:grid-cols-2 lg:grid-cols-3 px-20 gap-24 max-w-1128 m-32+auto"
+    ></main>
+
+    <div id="loader" class="flex-center mt-32" style="display: none">
+      <span class="loader"></span>
+    </div>
+
+    <div class="flex-center">
+      <button class="btn" style="display: none" id="more">Load more</button>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
