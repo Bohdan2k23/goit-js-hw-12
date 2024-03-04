@@ -60,14 +60,14 @@ async function onSubmit(ev) {
 
   render(images, gallery);
 
-  const lightbox = new SimpleLightbox("main a", {
-    captionsData: "alt",
-    captionDelay: 250,
-  });
-
   lightbox.refresh();
   page++;
 }
+
+const lightbox = new SimpleLightbox("main a", {
+  captionsData: "alt",
+  captionDelay: 250,
+});
 
 form.addEventListener("submit", (ev) => {
   gallery.innerHTML = "";

@@ -9,7 +9,7 @@ export async function getImages(keyword, page = 1) {
     image_type: "photo",
     orientation: "horizontal",
     safesearch: "true",
-    per_page: 15,
+    per_page: 150,
     page,
   };
   try {
